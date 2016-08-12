@@ -1,0 +1,30 @@
+1385797449
+还Chrome浏览器一个干净的新标签页面
+原生的 Google Chrome 默认设置 "新标签页" 会显示 "最近浏览的网站"，让很多有 "洁癖" 和 "强迫症" 的同学们百爪挠心！这里介绍个办法，还 Chrome 浏览器一个干净清爽的新标签页面。
+
+<img src="http://www.blog.com/imgs/10001_2.jpg" />
+
+下面是插件的目录结构， newTab 文件夹下有 manifest.json 和 newTab.html 两个文件。
+
+<pre>
+/newTab
+/newTab/manifest.json
+/newTab/newTab.html
+</pre>
+
+文件 newTab.html 是个空文件，不需要任何内容；文件 manifest.json 中的内容如下，直接复制粘贴即可。
+
+<pre>
+{
+	"name": "newTab",
+	"description": "newTab Startpage",
+	"version": "2",
+	"manifest_version": 2,
+	"chrome_url_overrides":
+	{
+		"newtab": "newTab.html"
+	}
+}
+</pre>
+
+文件和目录都安排妥当，接下来就是 "打包" 步骤了。在Chrome浏览器中依次选择 "菜单" - "工具" - "开发者模式" - "打包扩展程序"，选中 "newTab文件夹"，桌面就会生成一个名为 "newTab.crx" 的文件，将此文件拖入 Chrome 即可完成安装。这时再点击 "新建标签" ，看看讨厌的 "最近浏览的网站"、"搜索框"、"书签栏"、"Google+" 是不是都不见啦？

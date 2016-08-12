@@ -1,0 +1,55 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal;}ol,ul{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}q:before,q:after{content:'';}abbr,acronym{border:0;}a:link,a:visited{color:#333;text-decoration:none;}a:hover,a:active{color:#000;text-decoration:none;}.fl{float:left;display:inline;}.fr{float:right;display:inline;}img{display:block;}.clearfix:before,.clearfix:after{content:"";display:table}.clearfix:after{clear:both}.clearfix{zoom:1}
+body{ font-family: Georgia,"Times New Roman",Times,"Kai","Kaiti SC","KaiTi","BiauKai","楷体","楷体_GB2312",serif; background: #F9F9F5; color: #2C3E50 }
+body{ font-family: "Lucida Grande", "Microsoft JhengHei", "Microsoft YaHei";}
+.main{ width: 800px; margin:0 auto; }
+
+.main img{ margin: 20px 0 }
+
+h1{
+	font-size: 36.5px;
+	text-shadow: -1px 0px 0px rgba(0,0,0,0.75);
+	margin: 60px 0 50px;
+	font-family: "Lucida Grande", "Microsoft JhengHei", "Microsoft YaHei";
+}
+
+h2{
+	font-size: 20.5px;
+	text-shadow: -1px 0px 0px rgba(0,0,0,0.75);
+	margin: 30px 0;
+	font-family: "Lucida Grande", "Microsoft JhengHei", "Microsoft YaHei";
+}
+
+li{ font-size: 20px; margin: 30px 0; font-weight: bold; position: relative; }
+li span{ position: absolute; top:0; right:0; font-weight: normal; font-size: 16px; margin-top:3px }
+
+li a:link,li a:visited{color:#666;text-decoration:none;}
+li a:hover,li a:active{color:#007799;text-decoration:none;}
+
+.content p{
+	font-family: Georgia,"Times New Roman",Times,"Songti SC","SimSun",serif;
+	font-family: "Lucida Grande", "Microsoft JhengHei", "Microsoft YaHei";
+	font-size: 18px;
+	font-weight: 100;
+	line-height: 35px;
+	text-align: justify;
+	margin: 25px 0;
+}
+
+pre {
+	font-size: 15px;
+	border: 1px solid #FF8E42;
+	border: 1px solid #D6DBDF;
+	border-left-width: 5px;
+	background: #FFFF90;
+	background: none repeat scroll 0 0 rgba(102,128,153,.05);
+	font-family: 'courier new';
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	margin: 20px 0;
+	padding: 8px 12px;
+	tab-size:4;  
+	-moz-tab-size:4;  
+	-o-tab-size:4;
+	line-height:2;
+	color: #000
+}

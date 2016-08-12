@@ -1,0 +1,39 @@
+1403437165
+简单记录借助 Github 免费搭建博客
+sfsf
+
+首先需要有个 Github 账号，安装 Git-1.9.4-preview20140611.exe 工具，然后创建一个名为 Blog 的项目，之后选择 gh-pages ；在桌面新建 github 文件夹，进入后右键选择 git bash 进入命令行模式...
+
+<pre>
+
+git clone https://github.com/cnhello/blog.git
+
+cd blog
+
+git add .
+
+git commit -m 'some message'
+
+#注意下面两处 Blog 可以改自己喜欢的名字
+
+git remote add blog https://github.com/cnhello/blog.git
+
+git push blog gh-pages
+
+</pre>
+
+如果执行 git remote add origin https://github.com/findingsea/myRepoForBlog.git ，出现错误：fatal: remote origin already exists 执行下面命令
+
+<pre>
+git remote rm origin
+</pre>
+
+再往后执行 git remote add origin https://github.com/findingsea/myRepoForBlog.git 即可。
+
+在执行git push origin master时，报错：error:failed to push som refs to.......
+
+<pre>
+git pull origin master
+</pre>
+
+到此简单的记录了借助 Github 搭建博客的基本命令，再玩一段时间继续追加
