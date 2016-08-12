@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>关于 Python 编码（乱码）的学习实验笔记</title>
+	<link rel="stylesheet" href="../reset.css" type="text/css"/>
+</head>
+<body>
+	<div class="main">
+		<h1>关于 Python 编码（乱码）的学习实验笔记</h1>
+		<div class="content">
+			<pre>
+#-*-coding:utf-8-*-
+import sys
+import locale
+win = locale.getdefaultlocale()
+old = sys.getdefaultencoding()
+reload(sys)
+sys.setdefaultencoding(win[1])
+now = sys.getdefaultencoding()
+s = u'严'
+print s
+print '----------------'
+print 'win = '+win[1]
+print '----------------'
+print 'old = '+old
+print '----------------'
+print 'now = '+now
+print '----------------'
+print len(s)
+print '----------------'
+print type(s)
+print '----------------'
+print repr(s)
+print '----------------'
+</pre>
+<p>各种材料尚未整理</p>
+<pre>
+#也谈 Python 的中文编码处理
+http://in355hz.iteye.com/blog/1860787
+#详解 python 中文编码与处理
+http://my.oschina.net/leejun2005/blog/74430
+#python 中文字符编码 decode encode 以及乱码解决总结
+http://outofmemory.cn/code-snippet/1587/python-zhongwen-charaeter-coding-decode-encode-yiji-luanma-resolve-summary
+#Python 字符编码详解
+http://www.cnblogs.com/huxi/articles/1897271.html
+#Python 中文编码问题
+http://www.cnblogs.com/ymy124/archive/2012/06/23/2559282.html
+#python sublime text2 中文乱码 [Decode error - output not utf-8]
+http://blog.sina.com.cn/s/blog_765abd7b0101dtbw.html
+#python 字符编码与解码——unicode、str和中文：UnicodeDecodeError: 'ascii' codec can't decode
+http://blog.csdn.net/trochiluses/article/details/16825269
+#Python中文乱码问题大总结
+http://www.pythontab.com/html/2013/pythonjichu_0702/473.html
+</pre>
+
+		</div>
+	</div>
+</body>
+</html>

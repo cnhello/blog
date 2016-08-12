@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>还Chrome浏览器一个干净的新标签页面</title>
+	<link rel="stylesheet" href="../reset.css" type="text/css"/>
+</head>
+<body>
+	<div class="main">
+		<h1>还Chrome浏览器一个干净的新标签页面</h1>
+		<div class="content">
+			
+<img src="http://www.blog.com/imgs/10001_2.jpg" />
+<p>下面是插件的目录结构， newTab 文件夹下有 manifest.json 和 newTab.html 两个文件。</p>
+<pre>
+/newTab
+/newTab/manifest.json
+/newTab/newTab.html
+</pre>
+<p>文件 newTab.html 是个空文件，不需要任何内容；文件 manifest.json 中的内容如下，直接复制粘贴即可。</p>
+<pre>
+{
+	"name": "newTab",
+	"description": "newTab Startpage",
+	"version": "2",
+	"manifest_version": 2,
+	"chrome_url_overrides":
+	{
+		"newtab": "newTab.html"
+	}
+}
+</pre>
+<p>文件和目录都安排妥当，接下来就是 "打包" 步骤了。在Chrome浏览器中依次选择 "菜单" - "工具" - "开发者模式" - "打包扩展程序"，选中 "newTab文件夹"，桌面就会生成一个名为 "newTab.crx" 的文件，将此文件拖入 Chrome 即可完成安装。这时再点击 "新建标签" ，看看讨厌的 "最近浏览的网站"、"搜索框"、"书签栏"、"Google+" 是不是都不见啦？</p>
+
+		</div>
+	</div>
+</body>
+</html>
